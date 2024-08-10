@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 namespace DSA
 {
     // Given 2 array, create a function that let a user know (true/false) whether these two arrays contaion any common items
+    //f
     //For example 
     //const array1= ['a','b','c','d']
     //const array2= ['z','y','i']
