@@ -1,23 +1,18 @@
-﻿// THIS FUNCTION FINDS "NEMO" AND PRINT IT
-/*string[] nemo = { "nemo", "Boj", "mi", "You" };
-FindNemo(nemo);
-
-static void FindNemo(string[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.WriteLine("Running");
-        if (array[i] == "nemo")
-        {
-            Console.WriteLine("found nemo");
-            break;
-        }
-
-    }//0(n) linear: Using break; helps us break out of the loop once we found nemo,
-     //else it wouldve looped through all the the elements even after finding nemo
-}*/
+﻿using DSA;
 
 
+// THIS FUNCTION FINDS "NEMO" AND PRINT IT (FindAStringInAnArray class)
+
+/*FindAStringInAnArray findAStringInAnArray = new FindAStringInAnArray();
+string[] nemo = { "nemo", "Boj", "mi", "You" };
+findAStringInAnArray.FindNemo(nemo);*/
+
+//THIS FUNCTION COMPARES ITEM IN TWO DIFFERENT ARRAY (CompareCommonItems class)
+CompareCommonItems compareCommonItems = new CompareCommonItems();
+string[] array1 = { "a", "b", "c", "x" };
+string[] array2 = {"z", "y", "x"};
+bool result = compareCommonItems.ContainsCommonItem2(array1, array2);
+Console.WriteLine(result);
 /*
 //LOG ALL PAIRS OF ARRAY
 string[] boxes = {"a", "b", "c", "d", "e"};
@@ -80,7 +75,7 @@ static void Boo(int[] array)
 }*/
 
 
-/*//Fill up the the empty array 
+/*//Fill up the empty array with Hi 
 string[] result = arrayOfHiNTimes(4);
 Console.WriteLine(string.Join(", ", result));
 
@@ -94,3 +89,16 @@ static string[] arrayOfHiNTimes(int n)
     return hiArray;
 }
 */
+/*int[] result = arrayOfOdd(11);
+Console.WriteLine(string.Join(", ", result));
+
+static int[] arrayOfOdd(int n)
+{
+    int[] odd = new int[n];
+    for (int i = 1; i < n; i++)
+    {
+
+    odd[i] = i*3;
+    }
+    return odd;
+}*/
