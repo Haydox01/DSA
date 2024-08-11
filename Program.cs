@@ -8,97 +8,63 @@ string[] nemo = { "nemo", "Boj", "mi", "You" };
 findAStringInAnArray.FindNemo(nemo);*/
 
 //THIS FUNCTION COMPARES ITEM IN TWO DIFFERENT ARRAY (CompareCommonItems class)
-CompareCommonItems compareCommonItems = new CompareCommonItems();
+
+/*CompareCommonItems compareCommonItems = new CompareCommonItems();
 string[] array1 = { "a", "b", "c", "x" };
 string[] array2 = {"z", "y", "x"};
 bool result = compareCommonItems.ContainsCommonItem2(array1, array2);
-Console.WriteLine(result);
-/*
-//LOG ALL PAIRS OF ARRAY
-string[] boxes = {"a", "b", "c", "d", "e"};
-logAllPairsOfArray(boxes);
+Console.WriteLine(result);*/
 
-static void logAllPairsOfArray(string[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        for (int j = 0; j < array.Length; j++)
-        {
-            Console.WriteLine(array[i] + array[j]);
-        }
-    }
-}*/
+//LOG ALL PAIRS OF ARRAY (PrintAllPairOfAnArray class)
+
+/*PrintAllPairOfAnArray printAllPairOfAnArray = new PrintAllPairOfAnArray();
+string[] boxes = {"a", "b", "c", "d", "e"};
+printAllPairOfAnArray.logAllPairsOfArray(boxes);
+*/
 
 
 //LOG FIRST TWO BOXES
 
-/*int[] boxes = new int[] { 1, 2, 3, 4, 5 };
-logFirstTwoBoxes(boxes);
-
-static void logFirstTwoBoxes(int[] boxes)
-{
-    Console.WriteLine(boxes[0]);
-    Console.WriteLine(boxes[1]);
-}//0(1). But 0(2) for two operations
-*/
+/*LogFirstTwoItem logFirstTwoItem = new LogFirstTwoItem();
+int[] boxes = new int[] { 1, 2, 3, 4, 5 };
+logFirstTwoItem.logFirstTwoBoxes(boxes);*/
 
 //FIBONACCI
 
-/*int[] result = Fibonacci(7);
+/*Fibbonacci fibbonacci = new Fibbonacci();
+int[] result =fibbonacci.FibonacciMethod(7);
 Console.WriteLine(string.Join(", ", result));
-
-static int[] Fibonacci(int n)
-{
-    if (n < 1) return new int[0];
-    if (n == 1) return new int[] { 0 };
-
-    int[] fib = new int[n];
-    fib[0] = 0;
-    fib[1] = 1;
-    for (int i = 2; i < n; i++)
-    {
-        fib[i] = fib[i - 1] + fib[i - 2];
-    }
-    return fib;
-}
 */
 
 // Print Boo five times 
-/*int[] n = { 1, 2, 3, 4, 5 };
-Boo(n);
-static void Boo(int[] array)
-{
-    for (int i = 0; i <array.Length ; i++)
-    {
-        Console.WriteLine("boooo");
-    }
-}*/
+/*PrintNTimes printNTimes = new PrintNTimes();
+int[] n = { 1, 2, 3, 4, 5 };
+printNTimes.Boo(n);*/
 
+//Fill up the empty array with Hi 
+/*FillUpEmptyArrayNTimes fillUpEmptyArrayNTimes = new FillUpEmptyArrayNTimes();
+string[] result =fillUpEmptyArrayNTimes.arrayOfHiNTimes(4);
+Console.WriteLine(string.Join(", ", result));*/
 
-/*//Fill up the empty array with Hi 
-string[] result = arrayOfHiNTimes(4);
+//Fill Up with even numbers
+/*FillUpArrayWithEvenNumbers fillUpArrayWithEvenNumbers = new FillUpArrayWithEvenNumbers();
+int[] result =fillUpArrayWithEvenNumbers.EvenArray(20);
 Console.WriteLine(string.Join(", ", result));
-
-static string[] arrayOfHiNTimes(int n)
-{
-   string[] hiArray = new string[n];
-    for (int i = 0; i < n; i++)
-    {
-        hiArray[i] = "Hi";
-    }
-    return hiArray;
-}
 */
-/*int[] result = arrayOfOdd(11);
+
+//Fill Up with Odd Numbers
+/*FillUpArrayWithOddNumbers fillUpArrayWithOddNumbers = new FillUpArrayWithOddNumbers();
+int[] result = fillUpArrayWithOddNumbers.OddArray(20);
 Console.WriteLine(string.Join(", ", result));
+*/
 
-static int[] arrayOfOdd(int n)
-{
-    int[] odd = new int[n];
-    for (int i = 1; i < n; i++)
-    {
+//SUM OF ELEMENTS IN AN ARRAY
+/*SumOfElementsInAnArray sumOfElementsInAnArray = new SumOfElementsInAnArray();
+int[] arr = { 1, 2, 3, 4, 5, 6, 7, };
+int result =sumOfElementsInAnArray.SumOfArray(arr);
+Console.WriteLine(string.Join(", ", result));*/
 
-    odd[i] = i*3;
-    }
-    return odd;
-}*/
+FindTheLongestWordInASentence findTheLongestWord = new FindTheLongestWordInASentence();
+string sentence = " All of these sentence ";
+string result =findTheLongestWord.longestEvenWord(sentence);
+Console.WriteLine(string.Join(", ", result));

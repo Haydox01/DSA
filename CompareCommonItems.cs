@@ -17,7 +17,7 @@ namespace DSA
     //const array1=['a','b','c','x']
     //const array2=['z','y','x']
     //Should return true
-    //---Brute force way is O(n^2) quadatic which is nested loops
+    //---Brute force way is O(n^2) quadratic which is nested loops
     public class CompareCommonItems
     {
        public bool ContainsCommonItem(string[] arr1, string[] arr2)
