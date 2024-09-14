@@ -16,6 +16,7 @@ namespace DSA
                 sum += n[i];
             }
             return sum;
+           /* return n.Length*(n.Length + 1) / 2;*/
 
         }
     }
