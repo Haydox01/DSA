@@ -1,6 +1,7 @@
 ﻿using DSA;
 using DSA.Core_Concepts;
 using DSA.Questions_and_Solutios;
+using Microsoft.VisualBasic;
 
 
 // THIS FUNCTION FINDS "NEMO" AND PRINT IT (FindAStringInAnArray class)
@@ -34,9 +35,9 @@ logFirstTwoItem.logFirstTwoBoxes(boxes);*/
 //FIBONACCI
 
 /*Fibbonacci fibbonacci = new Fibbonacci();
-int[] result =fibbonacci.FibonacciMethod(7);
-Console.WriteLine(string.Join(", ", result));
-*/
+int[] result = fibbonacci.FibonacciMethod(7);
+Console.WriteLine(string.Join(", ", result));*/
+
 
 // Print Boo five times 
 /*PrintNTimes printNTimes = new PrintNTimes();
@@ -66,12 +67,18 @@ int[] arr = { 1, 2, 3, 4, 5, 6, 7, };
 int result = sumOfElementsInAnArray.SumOfArray(arr);
 Console.WriteLine(string.Join(", ", result));*/
 
+// REVERSE STRINGS
+/*ReverseWordsInAString reverse = new ReverseWordsInAString();
+string sentence = "james..and.bola.are....coming.home";
+string result = ReverseWordsInAString.ReverseWords(sentence);
+Console.WriteLine(result);*/
+
 //TWO SUM
 
-PrintTwoIndexEqualToSum p = new PrintTwoIndexEqualToSum();
+/*PrintTwoIndexEqualToSum p = new PrintTwoIndexEqualToSum();
 int[] arr = { 2, 4, 5, 6, 10, 1 };
 int[] found = p.TwoSum(arr, 78);
-Console.WriteLine(string.Join(", " , found));
+Console.WriteLine(string.Join(", " , found));*/
 
 //PRINT THE LONGEST WORD IN A SENTENCE
 /*FindTheLongestWordInASentence findTheLongestWord = new FindTheLongestWordInASentence();
@@ -101,3 +108,38 @@ s.Display(A, 6);
 s.InsertionSort(A, 6);
 Console.WriteLine("Sorted Array");
 s.Display(A, 6);*/
+
+
+static int[] Twosum(int[] A, int target)
+{
+    for (int i = 0; i < A.Length; i++)
+    {
+        for (int j = i + 1; j < A.Length; j++)
+        {
+            if (A[i] + A[j] == target)
+            {
+                return new int[] { i, j };
+            }
+        }
+    }
+    return new int[] {};
+}
+int[] arr = { 3, 4, 4, 6 };
+int[] result = Twosum(arr, 10);
+Console.WriteLine(string.Join(", ", result));
+
+
+
+
+/*public int[] TwoSum(int[] nums, int target)
+{
+    for (int i = 0; i < nums.Length; i++)
+    {
+        for (int j = i + 1; j < nums.Length; j++)
+            if (nums[i] + nums[j] == target)
+                return new int[] { i, j };
+    }
+    return new int[] { };
+}
+}
+*/
