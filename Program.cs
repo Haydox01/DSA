@@ -110,36 +110,9 @@ Console.WriteLine("Sorted Array");
 s.Display(A, 6);*/
 
 
-static int[] Twosum(int[] A, int target)
-{
-    for (int i = 0; i < A.Length; i++)
-    {
-        for (int j = i + 1; j < A.Length; j++)
-        {
-            if (A[i] + A[j] == target)
-            {
-                return new int[] { i, j };
-            }
-        }
-    }
-    return new int[] {};
-}
-int[] arr = { 3, 4, 4, 6 };
-int[] result = Twosum(arr, 10);
-Console.WriteLine(string.Join(", ", result));
 
 
-
-
-/*public int[] TwoSum(int[] nums, int target)
-{
-    for (int i = 0; i < nums.Length; i++)
-    {
-        for (int j = i + 1; j < nums.Length; j++)
-            if (nums[i] + nums[j] == target)
-                return new int[] { i, j };
-    }
-    return new int[] { };
-}
-}
-*/
+int[] arr1 = { 1, 2, 3 };
+int[] arr2 = { 5, 6 };
+bool result =  Compare(arr1, arr2);
+Console.WriteLine(result);
