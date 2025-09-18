@@ -8,6 +8,15 @@ namespace DSA.Questions_and_Solutios
 {
     public class ReverseWordsInAString
     {
+        public static bool compare(int[] arr, int[] arr2){
+            for(int i = 0; i <arr.Length; i++)
+            {
+                for (int j = 0; i < arr2.Length; i++)
+                    if (arr[i] == arr[j])
+                        return true;
+            }
+            return false;
+        }
         public static string ReverseWords(string str)
         {
             List<string> words = new List<string>();

@@ -34,7 +34,16 @@ namespace DSA
             }
             return false; //0(A * B) nested for loop
         }
-
+        public static bool compare(int[] arr, int[] arr2)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                for (int j = 0; i < arr2.Length; i++)
+                    if (arr[i] == arr[j])
+                        return true;
+            }
+            return false;
+        }
 
         public bool ContainsCommonItem2(string[] arr1, string[] arr2)
         {
