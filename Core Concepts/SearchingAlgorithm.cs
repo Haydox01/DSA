@@ -8,6 +8,10 @@ namespace DSA.Core_Concepts
 {
     // linear search sequentially checks each element of the list until
     // a match is found or the whole list has been searched
+
+    // [] A is the Array
+    // int n is the number of element in the array
+    // key: element to be searched
     public class SearchingAlgorithm
     {
         public int LinearSearch(int[] A, int n, int key)
@@ -21,7 +25,7 @@ namespace DSA.Core_Concepts
             }
             return -1;
         }
-
+        
         public int LinearSearchForLoop(int[] A, int n, int key)
         {
             int index = 0;
